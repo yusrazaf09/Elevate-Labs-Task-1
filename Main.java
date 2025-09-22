@@ -39,11 +39,11 @@ public class Main {
             System.out.println("4. Divide");
             System.out.println("5. Exit");
             
-            int choice = scanner.nextInt();  // Read user's choice
+            int choice = scanner.nextInt();  
 
             if (choice == 5) {
                 System.out.println("Exiting the program...");
-                continueCalculations = false;  // Exit the loop
+                continueCalculations = false;  
             } else if (choice >= 1 && choice <= 4) {
                 System.out.print("Enter the first number: ");
                 double num1 = scanner.nextDouble();
@@ -52,7 +52,7 @@ public class Main {
                 double num2 = scanner.nextDouble();
 
                 double result = 0;
-                // Perform the operation based on the user's choice
+                
                 switch (choice) {
                     case 1:
                         result = add(num1, num2);
